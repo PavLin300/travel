@@ -1,0 +1,39 @@
+@import "mixins";
+
+.section-1{
+    background: $color;
+    z-index: 10;
+    position: relative;
+    padding: 40px;
+}
+
+
+.section-1-content{
+    margin: 0 auto;
+    text-align: center;
+    width: 490px;
+    color: $colorWhite;
+    h1{
+        color: $colorWhite;
+        font-size: 50px;
+        line-height: 95%;
+        font-family: 'Cardo', serif;
+        margin-bottom: 25px;
+    }
+    .section-1-button{
+        @include button($color, $colorWhite, $colorWhite);
+        margin: 40px auto 0px;
+    }
+}
+
+.sharp-section-1{
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+.sharp1-section-1{
+    position: absolute;
+    right: 0;
+    top: 240px
+}

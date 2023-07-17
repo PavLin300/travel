@@ -1,0 +1,110 @@
+@import "mixins";
+
+footer{
+    padding: 120px;
+    background: #c4c4c4;
+    position: relative;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: 60px repeat(40px, 3);
+    grid-gap: 30px;
+    h1{
+        grid-column: 1/2;
+        grid-row: 1/4; 
+        font-size: 50px;
+        color: $color;
+        font-family: 'Cardo', serif;
+        
+    }
+
+    h3{
+        grid-column: 2/3;
+        grid-row: 1/2; 
+        font-weight: bold;
+    }               
+
+    .link-item1{
+        grid-column: 2/3;
+        grid-row: 2/3; 
+    }
+
+    .link-item2{
+        grid-column: 2/3;
+        grid-row: 3/4; 
+    }
+
+    .link-item3{
+        grid-column: 2/3;
+        grid-row: 4/5; 
+    }
+
+    .link-item4{
+        grid-column: 3/4;
+        grid-row: 2/3; 
+    }
+
+    .link-item5{
+        grid-column: 3/4;
+        grid-row: 3/4; 
+    }
+
+    .link-item6{
+        grid-column: 3/4;
+        grid-row: 4/5; 
+    }
+
+    .link-item7{
+        grid-column: 4/5;
+        grid-row: 2/3; 
+    }
+
+    .link-item8{
+        grid-column: 4/5;
+        grid-row: 3/4; 
+    }
+
+    .link-item9{
+        grid-column: 4/5;
+        grid-row: 4/5; 
+    }
+
+    .link-item10{
+        grid-column: 5/6;
+        grid-row: 2/3; 
+    }
+
+    .link-item11{
+        grid-column: 5/6;
+        grid-row: 3/4; 
+    }
+
+    .link-item12{
+        grid-column: 5/6;
+        grid-row: 4/5; 
+    }
+
+    div[class^=link-item]{
+        cursor: pointer;
+        &:hover{
+            color: lighten($color, 20%);
+        }
+    }
+
+   
+}
+
+.rights{
+    text-align: center;
+    margin-top: 120px;
+    
+}
+
+.sharp-footer{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+}
+

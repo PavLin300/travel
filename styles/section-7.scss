@@ -1,0 +1,89 @@
+@import "mixins";
+
+.section-7{
+    padding: 110px 70px;
+    background: $colorWhite;
+    position: relative;
+}
+
+.section-7-title{
+    text-align: center;
+    margin: auto;
+    width: 600px;
+    h1{
+        font-size: 65px;
+        color: $color;
+        font-family: 'Cardo', serif;
+        font-weight: bold;
+    }
+}
+
+
+.section-7-content{
+    display: flex;
+    margin-top: 70px;
+    gap: 20px;
+    
+    .section-7-cards{
+        text-align: center;
+        border: 2px solid $color;
+        border-radius: 5px;
+        height: 425px;
+        padding: 70px 40px;
+        
+
+        .arrow-left{
+            position: absolute;
+            border: 2px solid $color;
+            border-radius: 5px;
+            width: 85px;
+            height: 75px;
+            padding: 10px;
+            left: 300px;
+            top: 550px;
+            background: $colorWhite;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover{
+                background: $color;
+            }
+        }
+
+        .arrow-right{
+            position: absolute;
+            border: 2px solid $color;
+            border-radius: 5px;
+            width: 85px;
+            height: 75px;
+            padding: 10px;
+            right: 300px;
+            top: 550px;
+            background: $colorWhite;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover{
+                background: $color;
+            }
+        }
+    }
+
+
+    h3{
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+}
+
+.sharp-section-7{
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+
+.sharp1-section-7{
+    position: absolute;
+    left: 0;
+    top: 80px;
+}

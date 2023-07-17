@@ -1,0 +1,41 @@
+@import "mixins";
+
+.section-2{
+    padding: 165px 115px;
+    background: $colorWhite;
+    position: relative;
+}
+
+.secction-2-content{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    h2{
+        font-family: 'Cardo', serif;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 90%;
+        margin-bottom: 20px;
+        &::before{
+            content: "";
+            display: block;
+            width: 55px;
+            height: 3px;
+            background: $color;
+            margin: 25px 0px;
+        }
+    }
+}
+
+.sharp-section-2{
+    position: absolute;
+    left: 0;
+    top: 50px;
+
+}
+
+.sharp1-section-2{
+    position: absolute;
+    right: 0;
+    top: 370px;
+}

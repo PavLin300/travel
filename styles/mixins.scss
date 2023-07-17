@@ -1,0 +1,21 @@
+$color: #232323;
+$colorWhite: #e9e7e7;
+
+@mixin button($bgColor, $textColor, $borderColor){
+    background: $bgColor;
+    color: $textColor;
+    border: 4px solid $borderColor;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    width: 245px;
+    margin-top: 40px;
+    text-align: center;
+    transition: .2s;
+    &:hover{
+        color: $bgColor;
+        background: $textColor;
+    }
+}

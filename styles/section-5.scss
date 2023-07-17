@@ -1,0 +1,60 @@
+@import "mixins";
+
+
+.section-5{
+    padding: 150px 0px 160px 120px;
+    background: $color;   
+    position: relative;
+}
+
+
+.section-5-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 140px 160px 160px;
+    column-gap: 100px;
+    row-gap: 60px;
+
+    .section-5-title{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        color: $colorWhite;
+        font-size: 45px;
+        font-family: 'Cardo', serif;
+        font-weight: bold;
+
+    }
+
+    .section-5-text1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        color: $colorWhite;
+        align-self: end;
+        h3{
+            margin-bottom: 10px;
+        }
+    }
+
+    .section-5-text2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        color: $colorWhite;
+        align-self: start;
+        h3{
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .section-5-img{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        align-self: start;
+    }
+}
+
+.sharp-section-5{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
